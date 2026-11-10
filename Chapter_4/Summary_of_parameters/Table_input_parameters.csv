@@ -1,0 +1,51 @@
+settings;Parameter;Unit;Domain 1;Domain 2;Domain 3
+Fracture families;Shape;-;ellipse;ellipse;ellipse
+;Aspect ratio;-;1;1;1
+;Size distribution;-;truncated power law;truncated power law;truncated power law
+;Power-law exponent, alpha;-;1.12;1.23;1.7
+;Minimum radius, r0;m;1;1;1
+;Maximum radius, ru;m;23.59;18.8;13.23
+;Mean strike;deg;63.53;90.98;144.79
+;Mean dip;deg;68;81;51
+;Fisher concentration, kappa;-;31.94;52.98;6.04
+;Family probability;-;0.34;0.38;0.28
+;P32, low-intensity domain;m-1;0.33;0.22;0.06
+;P32, medium-intensity domain;m-1;0.48;0.42;0.2
+;P32, high-intensity domain;m-1;0.74;0.33;0.33
+;Total P32 (low / medium / high);m-1;0.61 / 1.10 / 1.40;;
+Hydraulic properties;Aperture-radius relation;-;b = a r^B (correlated);;
+;Coefficient, a;m^0.5;5.00E-04;;
+;Exponent, B;-;0.5;;
+;Fracture permeability;m2;k = b^2 / 12 (cubic law);;
+;Rock matrix;-;impermeable;;
+Domain and network;Domain size;m;50 x 50 x 50;;
+;Domain volume;m3;1.25E+05;;
+;Domain size increase;m;+24 per side;;
+;Fracture centres;-;Poisson process;;
+;Orientation convention;-;strike / dip, degrees;;
+;Boundary faces;-;all six active;;
+;Cluster criterion;-;largest connected cluster only;;
+;Stop condition;-;target P32 per family;;
+;Rejects per fracture;-;2;;
+;Realizations per domain;-;20;;
+Mesh;Minimum feature size, h;m;0.1;;
+;Meshing distance, min / max;m;1.0 / 5.0;;
+;Maximum resolution factor;-;10;;
+Flow;Solver;-;PFLOTRAN (MODE RICHARDS);;
+;Regime;-;steady state, saturated, single phase;;
+;Inlet pressure (Dirichlet);Pa;2.00E+06;;
+;Outlet pressure (Dirichlet);Pa;1.00E+06;;
+;Pressure difference;Pa;1.00E+06;;
+;Pressure gradient;Pa m-1;2.00E+04;;
+;Lateral boundaries;-;no flow;;
+;Initial pressure;Pa;1.01E+06;;
+;Buoyancy;-;neglected;;
+Fluid;Fluid;-;water;;
+;Reference temperature;degC;25;;
+;Density, rho;kg m-3;997.9;;
+;Dynamic viscosity, mu;Pa s;8.90E-04;;
+Transport;Particle tracking;-;dfnTrans (WALKABOUT);;
+;Number of particles;-;1.00E+04;;
+;Injection mode;-;flux-weighted;;
+;Intersection mixing rule;-;complete mixing;;
+;Control plane spacing;m;5;;
